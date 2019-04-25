@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    printf("請輸入月份及日期:");
+	int Month, Day, Sun;
+    while( cin >> Month >> Day )
+    {
+        Sun = (Month*2+Day)%3;
+        if( Sun == 0 )
+        {
+            cout << "普通" << endl;
+        }
+        if( Sun == 1 )
+        {
+            cout << "吉" << endl;
+        }
+        if( Sun == 2 )
+        {
+            cout << "大吉" << endl;
+        }
+    }
+    return 0;
+}
